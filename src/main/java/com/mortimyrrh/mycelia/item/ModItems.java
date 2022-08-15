@@ -2,6 +2,7 @@ package com.mortimyrrh.mycelia.item;
 
 import com.mortimyrrh.mycelia.Mycelia;
 import com.mortimyrrh.mycelia.item.custom.MycelialStewItem;
+import com.mortimyrrh.mycelia.item.custom.NautilusItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,7 +20,7 @@ public class ModItems {
             () -> new MycelialStewItem());
 
     public static final RegistryObject<Item> NAUTILUS = ITEMS.register("nautilus",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MYCELIA_TAB)));
+            () -> new NautilusItem());
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
