@@ -45,6 +45,10 @@ public class MycelialStewItem extends Item {
             components.add(Component.literal("Press SHIFT for more info").withStyle(ChatFormatting.YELLOW));
         }
         // advancement "A yummy treat with a multi-dimensional kick"
+        // tags
+        // recipe
+        // loot tabels?
+        // make the myshroom placeabale
 
         super.appendHoverText(itemStack, level, components, tooltipFlag);
     }
