@@ -1,6 +1,13 @@
 {
+  "_": "->------------------------]  Items  [------------------------<-",
+
   "item.mycelia.myshroom": "Myshroom",
+  "item.mycelia.mycelial_stew": "Mycelial Stew",
   "item.mycelia.nautilus": "Nautilus",
 
-  "itemGroup.myceliatab": "Mycelia"
+  "_": "->------------------------]  UI & Messages  [------------------------<-",
+
+  "itemGroup.myceliatab": "Mycelia",
+
+  "_": "_"
 }

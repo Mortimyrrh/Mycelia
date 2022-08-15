@@ -1,7 +1,7 @@
 package com.mortimyrrh.mycelia.item;
 
 import com.mortimyrrh.mycelia.Mycelia;
-import net.minecraft.world.item.CreativeModeTab;
+import com.mortimyrrh.mycelia.item.custom.MycelialStewItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,6 +14,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> MYSHROOM = ITEMS.register("myshroom",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MYCELIA_TAB)));
+
+    public static final RegistryObject<Item> MYCELIAL_STEW = ITEMS.register("mycelial_stew",
+            () -> new MycelialStewItem());
 
     public static final RegistryObject<Item> NAUTILUS = ITEMS.register("nautilus",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MYCELIA_TAB)));
