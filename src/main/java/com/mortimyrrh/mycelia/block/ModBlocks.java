@@ -1,12 +1,15 @@
 package com.mortimyrrh.mycelia.block;
 
 import com.mortimyrrh.mycelia.Mycelia;
+import com.mortimyrrh.mycelia.block.custom.MyshroomBlock;
 import com.mortimyrrh.mycelia.item.ModCreativeModeTab;
 import com.mortimyrrh.mycelia.item.ModItems;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,6 +26,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLAH_BLOCK = registerBlock("blah",
             () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.MYCELIA_TAB);
+
+    public static final RegistryObject<Block> MYSHROOM = registerBlock("myshroom",
+            () -> new MyshroomBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM)), ModCreativeModeTab.MYCELIA_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name,
                                                                      Supplier<T> block,
