@@ -1,11 +1,9 @@
 package com.mortimyrrh.mycelia.block.custom;
 
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.level.block.FlowerBlock;
+import net.minecraft.world.level.block.BushBlock;
 
-public class MyshroomBlock extends FlowerBlock {
+public class MyshroomBlock extends BushBlock {
     public MyshroomBlock(Properties properties) {
-        super(MobEffects.HEAL, 0, properties);
+        super(properties);
     }
 }
