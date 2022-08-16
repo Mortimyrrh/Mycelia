@@ -1,6 +1,7 @@
 package com.mortimyrrh.mycelia.block;
 
 import com.mortimyrrh.mycelia.Mycelia;
+import com.mortimyrrh.mycelia.block.custom.MycelialLodestoneBlock;
 import com.mortimyrrh.mycelia.block.custom.MyshroomBlock;
 import com.mortimyrrh.mycelia.item.ModCreativeModeTab;
 import com.mortimyrrh.mycelia.item.ModItems;
@@ -29,6 +30,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MYSHROOM = registerBlock("myshroom",
             () -> new MyshroomBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM)), ModCreativeModeTab.MYCELIA_TAB);
+
+    public static final RegistryObject<Block> MYCELIAL_LODESTONE = registerBlock("mycelial_lodestone",
+            () -> new MycelialLodestoneBlock(), ModCreativeModeTab.MYCELIA_TAB);
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name,
                                                                      Supplier<T> block,

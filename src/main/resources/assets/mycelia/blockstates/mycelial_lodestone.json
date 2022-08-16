@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "mycelia:block/mycelial_lodestone_top" },
+    "lit=false": { "model": "mycelia:block/mycelial_lodestone_side" }
+  }
+}
