@@ -28,6 +28,9 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.MYCELIA_TAB);
 
+    public static final RegistryObject<Block> GLASS_BLOCK = registerBlock("glass",
+            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.MYCELIA_TAB);
     public static final RegistryObject<Block> MYSHROOM = registerBlock("myshroom",
             () -> new MyshroomBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM)), ModCreativeModeTab.MYCELIA_TAB);
 

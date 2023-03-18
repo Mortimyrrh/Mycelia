@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "mycelia:blah"
+    "mycelia:blah",
+    "mycelia:glass"
   ]
 }
