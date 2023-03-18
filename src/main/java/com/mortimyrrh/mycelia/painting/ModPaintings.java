@@ -20,6 +20,9 @@ public class ModPaintings {
     public static final RegistryObject<PaintingVariant> heather = PAINTING_VARIANTS.register("heather",
             () -> new PaintingVariant(32, 16));
 
+    public static final RegistryObject<PaintingVariant> dan = PAINTING_VARIANTS.register("dan",
+            () -> new PaintingVariant(32, 32));
+
     public static void register(IEventBus eventBus)
     {
         PAINTING_VARIANTS.register(eventBus);
