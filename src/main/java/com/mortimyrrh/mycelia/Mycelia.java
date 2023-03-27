@@ -2,6 +2,7 @@ package com.mortimyrrh.mycelia;
 
 import com.mojang.logging.LogUtils;
 import com.mortimyrrh.mycelia.block.ModBlocks;
+import com.mortimyrrh.mycelia.enchantment.ModEnchantment;
 import com.mortimyrrh.mycelia.item.ModItems;
 import com.mortimyrrh.mycelia.painting.ModPaintings;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,6 +29,7 @@ public class Mycelia
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModPaintings.register(modEventBus);
+        ModEnchantment.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

@@ -12,9 +12,16 @@
   "item.mycelia.mycelial_stew": "Mycelial Stew",
   "item.mycelia.nautilus": "Nautilus",
 
+  "_": "->------------------------]  Paintings  [------------------------<-",
+
+
   "_": "->------------------------]  UI & Messages  [------------------------<-",
 
   "itemGroup.myceliatab": "Mycelia",
+
+  "_": "->------------------------]  Enchantments  [------------------------<-",
+
+  "enchantment.mycelia.copper_plated": "Copper Plated",
 
   "_": "_"
 }
