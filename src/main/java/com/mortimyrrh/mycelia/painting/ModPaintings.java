@@ -17,11 +17,17 @@ public class ModPaintings {
     public static final RegistryObject<PaintingVariant> CLOSE = PAINTING_VARIANTS.register("close",
             () -> new PaintingVariant(16, 16));
 
-    public static final RegistryObject<PaintingVariant> heather = PAINTING_VARIANTS.register("heather",
+    public static final RegistryObject<PaintingVariant> HEATHER = PAINTING_VARIANTS.register("heather",
             () -> new PaintingVariant(32, 16));
 
-    public static final RegistryObject<PaintingVariant> dan = PAINTING_VARIANTS.register("dan",
+    public static final RegistryObject<PaintingVariant> DAN = PAINTING_VARIANTS.register("dan",
             () -> new PaintingVariant(32, 32));
+
+    public static final RegistryObject<PaintingVariant> TREES = PAINTING_VARIANTS.register("trees",
+            () -> new PaintingVariant(32, 16));
+
+    public static final RegistryObject<PaintingVariant> PACK_PNG = PAINTING_VARIANTS.register("pack_png",
+            () -> new PaintingVariant(16, 16));
 
     public static void register(IEventBus eventBus)
     {

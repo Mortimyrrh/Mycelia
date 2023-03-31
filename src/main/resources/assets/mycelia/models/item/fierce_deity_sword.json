@@ -1,10 +1,10 @@
 {
-	"credit": "Made with Blockbench",
+	"credit": "Made by Mortimyrrh with Blockbench",
 	"textures": {
-		"1": "fierce_deity_sword",
-		"2": "gree",
-		"3": "hilt",
-		"4": "handle",
+		"1": "mycelia:item/fierce_deity_sword_green_blade",
+		"2": "mycelia:item/fierce_deity_sword_blue_blade",
+		"3": "mycelia:item/fierce_deity_sword_hilt",
+		"4": "mycelia:item/fierce_deity_sword_handle",
 		"particle": "hilt"
 	},
 	"elements": [
