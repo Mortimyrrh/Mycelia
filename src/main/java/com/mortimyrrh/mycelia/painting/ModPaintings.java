@@ -26,7 +26,7 @@ public class ModPaintings {
     public static final RegistryObject<PaintingVariant> TREES = PAINTING_VARIANTS.register("trees",
             () -> new PaintingVariant(32, 16));
 
-    public static final RegistryObject<PaintingVariant> PACK_PNG = PAINTING_VARIANTS.register("pack_png",
+    public static final RegistryObject<PaintingVariant> PACK = PAINTING_VARIANTS.register("pack",
             () -> new PaintingVariant(16, 16));
 
     public static void register(IEventBus eventBus)
