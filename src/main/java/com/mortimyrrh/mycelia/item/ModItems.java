@@ -1,6 +1,7 @@
 package com.mortimyrrh.mycelia.item;
 
 import com.mortimyrrh.mycelia.Mycelia;
+import com.mortimyrrh.mycelia.item.custom.FierceDeitySword;
 import com.mortimyrrh.mycelia.item.custom.MycelialStewItem;
 import com.mortimyrrh.mycelia.item.custom.NautilusItem;
 import net.minecraft.world.item.Item;
@@ -17,18 +18,13 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Mycelia.MOD_ID);
 
     public static final RegistryObject<Item> MYCELIAL_STEW = ITEMS.register("mycelial_stew",
-            () -> new MycelialStewItem());
+            MycelialStewItem::new);
 
     public static final RegistryObject<Item> NAUTILUS = ITEMS.register("nautilus",
-            () -> new NautilusItem());
+            NautilusItem::new);
 
     public static final RegistryObject<Item> FIERCE_DEITY_SWORD = ITEMS.register("fierce_deity_sword",
-            () -> new SwordItem(Tiers.DIAMOND, 10, 5f,
-                    new Item.Properties()
-                            .rarity(Rarity.RARE)
-                            .tab(ModCreativeModeTab.MYCELIA_TAB)
-                            .stacksTo(1)
-                    ));
+            FierceDeitySword::new);
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
