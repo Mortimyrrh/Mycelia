@@ -23,10 +23,10 @@ public class ModItems {
             MycelialStewItem::new);
 
     public static final RegistryObject<Item> MYSHROOM = ITEMS.register("myshroom",
-            () -> new MyshroomItem());
+            MyshroomItem::new);
 
     public static final RegistryObject<Item> NULLOAF = ITEMS.register("nulloaf",
-            () -> new NullloafItem());
+            NullloafItem::new);
 
     public static final RegistryObject<Item> NAUTILUS = ITEMS.register("nautilus",
             NautilusItem::new);

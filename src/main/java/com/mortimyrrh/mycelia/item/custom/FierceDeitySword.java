@@ -3,7 +3,7 @@ package com.mortimyrrh.mycelia.item.custom;
 import com.mortimyrrh.mycelia.item.ModCreativeModeTab;
 import net.minecraft.world.item.*;
 
-public class FierceDeitySword extends SwordItem {
+public class FierceDeitySword extends SwordItem{
 
     public FierceDeitySword() {
         super(Tiers.DIAMOND, 10, 5f, new Item.Properties()
@@ -14,5 +14,5 @@ public class FierceDeitySword extends SwordItem {
     }
 }
 
-
 // give entity myceiliay decay on hit
+// can't brake basic blocks like reeds?
