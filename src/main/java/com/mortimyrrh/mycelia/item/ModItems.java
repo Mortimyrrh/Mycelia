@@ -3,7 +3,9 @@ package com.mortimyrrh.mycelia.item;
 import com.mortimyrrh.mycelia.Mycelia;
 import com.mortimyrrh.mycelia.item.custom.FierceDeitySword;
 import com.mortimyrrh.mycelia.item.custom.MycelialStewItem;
+import com.mortimyrrh.mycelia.item.custom.MyshroomItem;
 import com.mortimyrrh.mycelia.item.custom.NautilusItem;
+import com.mortimyrrh.mycelia.item.custom.NullloafItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.SwordItem;
@@ -19,6 +21,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> MYCELIAL_STEW = ITEMS.register("mycelial_stew",
             MycelialStewItem::new);
+
+    public static final RegistryObject<Item> MYSHROOM = ITEMS.register("myshroom",
+            () -> new MyshroomItem());
+
+    public static final RegistryObject<Item> NULLOAF = ITEMS.register("nulloaf",
+            () -> new NullloafItem());
 
     public static final RegistryObject<Item> NAUTILUS = ITEMS.register("nautilus",
             NautilusItem::new);

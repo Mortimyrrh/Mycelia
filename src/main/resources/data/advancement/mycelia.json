@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "mycelia:mycelial_stew"
+    },
+    "title": "Mycelia",
+    "description": "Theres a fungus among us!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "mycelia:textures/block/meh.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "Mycelia:myshroom"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -5,6 +5,8 @@ import com.mortimyrrh.mycelia.block.ModBlocks;
 import com.mortimyrrh.mycelia.enchantment.ModEnchantment;
 import com.mortimyrrh.mycelia.item.ModItems;
 import com.mortimyrrh.mycelia.painting.ModPaintings;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -47,6 +49,7 @@ public class Mycelia
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.MYSHROOM_BLOCK.get(), RenderType.cutout());
         }
     }
 }
