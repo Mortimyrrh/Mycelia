@@ -49,7 +49,6 @@ public class Mycelia
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.MYSHROOM_BLOCK.get(), RenderType.cutout());
         }
     }
 }

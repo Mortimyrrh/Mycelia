@@ -2,5 +2,6 @@
   "parent": "minecraft:block/cross",
   "textures": {
     "cross": "mycelia:block/myshroom"
-  }
+  },
+  "render_type": "cutout"
 }
